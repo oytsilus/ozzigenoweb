@@ -1,0 +1,789 @@
+@font-face {
+  font-family: 'Futuran';
+  src: url("../fonts/futuran.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway ExtraBold';
+  src: url("../fonts/raleway-extrabold-webfont.eot");
+  src: url("../fonts/raleway-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-extrabold-webfont.woff2") format("woff2"), url("../fonts/raleway-extrabold-webfont.woff") format("woff"), url("../fonts/raleway-extrabold-webfont.ttf") format("truetype"), url("../fonts/raleway-extrabold-webfont.svg#ralewayextrabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url("../fonts/raleway-regular-webfont.eot");
+  src: url("../fonts/raleway-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway-regular-webfont.ttf") format("truetype"), url("../fonts/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("../fonts/raleway-bold-webfont.eot");
+  src: url("../fonts/raleway-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-bold-webfont.woff2") format("woff2"), url("../fonts/raleway-bold-webfont.woff") format("woff"), url("../fonts/raleway-bold-webfont.ttf") format("truetype"), url("../fonts/raleway-bold-webfont.svg#ralewaybold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway Italic';
+  src: url("../fonts/raleway-italic-webfont.eot");
+  src: url("../fonts/raleway-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/raleway-italic-webfont.woff2") format("woff2"), url("../fonts/raleway-italic-webfont.woff") format("woff"), url("../fonts/raleway-italic-webfont.ttf") format("truetype"), url("../fonts/raleway-italic-webfont.svg#ralewayitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\0000374}}
+html, body {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\0000378}}
+body {
+  background-color: #FFF;
+  font-family: "Raleway Regular", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\0000388}}
+.header__logo {
+  height: auto;
+  padding: 0 0 0 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\0000393}}
+.header__navbar {
+  background-color: #FFF;
+  border-color: transparent;
+  margin-bottom: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #EEE;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003101}}
+.header__navbarToggle {
+  border: none;
+  margin: 0 15px 0 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003110}}
+.header__navbarToggle:focus, .header__navbarToggle:hover, .blog__navbarToggle:focus, .blog__navbarToggle:hover {
+  background-color: transparent !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003114}}
+.header__navbarToggle .icon-bar {
+  background-color: #93BE15 !important;
+  height: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003118}}
+.header__navbarToggle .icon-bar + .icon-bar {
+  margin-top: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003124}}
+.header__navbarList {
+  font: normal 14px "Futuran", sans-serif;
+  margin: 14px -15px 14px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003130}}
+.header__navbarList > li > a {
+  color: #93BE15 !important;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_header\.scss}line{font-family:\00003135}}
+.header__navbarList > li > a:focus, .header__navbarList > li > a:hover, .header__navbarList > li > a.active {
+  background-color: transparent;
+  color: #FAD700 !important;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\000031}}
+a {
+  display: block;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\000035}}
+a:hover {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000310}}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000315}}
+img {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000319}}
+p {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000323}}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000331}}
+.btn.focus, .btn:focus, .btn:hover {
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000335}}
+.btn:active {
+  box-shadow: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000338}}
+.btn:active:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000344}}
+.bg, .bg__image {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_default\.scss}line{font-family:\0000351}}
+.bg__image {
+  background: no-repeat 50% 50%;
+  background-size: cover;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\000035}}
+.content {
+  position: relative;
+  top: 120px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\000039}}
+.content__teaser {
+  margin: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000313}}
+.content__heading {
+  color: #444;
+  font-family: "Raleway ExtraBold", sans-serif;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000320}}
+.container {
+  width: 960px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000326}}
+.works .col-lg-4, .works .col-xs-6 {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000330}}
+.works__screen {
+  background: #FFF;
+  height: 100vh;
+  position: relative;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000338}}
+.works__frame {
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000345}}
+.works__frameInnerWrap {
+  display: table-row;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000349}}
+.works__frameInner {
+  display: table-cell;
+  position: relative;
+  vertical-align: bottom;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000355}}
+.works__tiles {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000363}}
+.works__item {
+  cursor: pointer;
+  height: 33.33333333vw;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 50%;
+  text-align: center;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000377}}
+.works__item:hover .works__itemCover {
+  opacity: .3;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: opacity 0.6125s cubic-bezier(0.39, 0.575, 0.565, 1), -webkit-transform 4s cubic-bezier(0.39, 0.575, 0.565, 1);
+          transition: opacity 0.6125s cubic-bezier(0.39, 0.575, 0.565, 1), transform 4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000387}}
+.works__itemCover {
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity .35s, -webkit-transform .35s;
+          transition: opacity .35s, transform .35s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\0000395}}
+.works__itemLogo {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003102}}
+.works__itemLogo:after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003110}}
+.works__itemImg {
+  display: inline-block;
+  max-width: 190px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003118}}
+.works .thumbnail {
+  border: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003124}}
+.works__thumb {
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003132}}
+.project__name {
+  font-size: 28px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003136}}
+.project__desc {
+  color: #AAA;
+  font-family: "Raleway Regular", sans-serif;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003142}}
+.project__thumb {
+  margin: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003147}}
+.logoPath {
+  background: url(../img/background/ozzigeno-logo.png) no-repeat center;
+  height: 490px;
+  position: fixed;
+  right: -12%;
+  top: 22%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003158}}
+.blog__preview {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003161}}
+.blog__preview--small {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003166}}
+.blog__link, .blog__list {
+  padding: 0;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003170}}
+.blog__link .gradient, .blog__list .gradient {
+  width: 100%;
+  height: inherit;
+  position: absolute;
+  -webkit-transition: all, 0.25s;
+  transition: all, 0.25s;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(35%, transparent), color-stop(100%, rgba(0, 0, 0, 0.82)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, transparent 35%, rgba(0, 0, 0, 0.82) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, transparent 35%, rgba(0, 0, 0, 0.82) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d1000000',GradientType=0 );
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003188}}
+.blog__link .thumbnail, .blog__list .thumbnail {
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003201}}
+.blog__link--big .blog__teaser h1 {
+  font-size: 36px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003209}}
+.blog__img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003213}}
+.blog__teaser {
+  bottom: 20px;
+  left: 20px;
+  position: absolute;
+  width: 80%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003219}}
+.blog__teaser .label {
+  background-color: rgba(134, 162, 51, 0.7);
+  border-radius: 0;
+  display: inline-block;
+  font: normal 16px "Raleway Italic", sans-serif;
+  line-height: 31px;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003229}}
+.blog__teaser h1 {
+  color: #FFF;
+  font: normal 24px "Raleway ExtraBold", sans-serif;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003237}}
+.blog__navbar {
+  background-color: #86A233;
+  border: none;
+  border-radius: 0;
+  min-height: 80px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003247}}
+.blog__navbar .navbar-nav > li > a {
+  color: #FFF;
+  font: normal 16px "Raleway Bold", sans-serif;
+  line-height: 80px;
+  padding: 0 15px;
+  text-transform: capitalize;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003260}}
+.blog__navbar .navbar-nav > .active > a, .blog__navbar .navbar-nav > .active a:focus, .blog__navbar .navbar-nav > .active a:hover {
+  background-color: transparent;
+  color: #202020;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003269}}
+.blog__navbar .navbar-form {
+  margin: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003274}}
+.blog__navbarToggle {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003281}}
+.blog__navbarToggle .icon-bar {
+  background-color: #FFF !important;
+  height: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003285}}
+.blog__navbarToggle .icon-bar + .icon-bar {
+  margin-top: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003291}}
+.blog__navbarSearch {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003294}}
+.blog__navbarSearch.displayed {
+  display: inline-block !important;
+  margin: 8px;
+  width: 76%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003300}}
+.blog__navbarSearch .form-group {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003305}}
+.blog__searchToggle {
+  display: none;
+  width: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003309}}
+.blog__searchToggle .form-group {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003314}}
+.blog__search {
+  height: 40px;
+  width: 100% !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003319}}
+.blog__searchIcon, .blog__searchIcon-mobile, .blog__closeIcon {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 40px;
+  line-height: 0.7;
+  padding: 0;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003330}}
+.blog__searchIcon:hover, .blog__searchIcon-mobile:hover, .blog__closeIcon:hover {
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003339}}
+.blog__searchIcon-mobile.navbar-toggle:hover, .blog__searchIcon-mobile.navbar-toggle:focus {
+  background-color: transparent !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003345}}
+.blog__closeIcon {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003354}}
+.blog__closeIcon .glyphicon-close {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003361}}
+.blog__closeIcon .glyphicon-close:before {
+  background: url(../img/button/close-white.png) no-repeat center;
+  content: '';
+  display: block;
+  height: 23px;
+  width: 23px;
+  -webkit-transition: background .5s;
+          transition: background .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003373}}
+.blog__closeIcon:hover {
+  background-color: transparent !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003380}}
+.blog__closeIcon:hover .glyphicon-close:before {
+  background: url(../img/button/close-black.png) no-repeat center;
+  -webkit-transition: background .5s;
+          transition: background .5s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003394}}
+.blog__list .thumbnail {
+  margin-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003398}}
+.blog__list .caption {
+  height: 220px;
+  padding: 20px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003402}}
+.blog__list .caption p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003409}}
+.blog__pic {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003413}}
+.blog__title {
+  font-family: "Raleway ExtraBold", sans-serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/style\.scss}line{font-family:\00003416}}
+.blog__title a {
+  color: #444;
+}
+
+@media screen and (min-width: 1440px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\000032}}
+  .col-xlg-3 {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\000038}}
+  .works__item {
+    height: 25vw;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000313}}
+  .logoPath {
+    right: -15%;
+    top: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000322}}
+  .blog__link--big {
+    width: calc(66.66666667% - 1px);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000326}}
+  .blog__link--small {
+    width: calc(33.33333333% - 1px);
+  }
+}
+@media screen and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000333}}
+  .container {
+    width: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000339}}
+  .works__item {
+    height: 50vw;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000344}}
+  .logoPath {
+    width: 500px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000352}}
+  .blog__teaser .label {
+    font-size: 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000356}}
+  .blog__teaser h1 {
+    font-size: 21px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000369}}
+  .blog__link--big .blog__teaser h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000382}}
+  .blog__link--big {
+    width: calc(66.66666667% - 1px);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000386}}
+  .blog__link--small {
+    width: calc(33.33333333% - 1px);
+  }
+}
+@media screen and (max-width: 767px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000395}}
+  .header__navbar {
+    padding: 15px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\0000399}}
+  .header__navbarRelative {
+    position: relative;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003103}}
+  .header__navbarCollapse {
+    margin-top: 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003107}}
+  .header__navbarList {
+    margin: 7.5px -15px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003114}}
+  .content__heading {
+    font-size: 21px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003119}}
+  .logoPath {
+    right: -100%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003127}}
+  .blog__teaser {
+    font-size: 23px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003133}}
+  .blog__link--big {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003140}}
+  .blog__link--big .blog__teaser h1 {
+    font-size: 32px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003147}}
+  .blog__link--small {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003152}}
+  .blog__navbar {
+    margin-bottom: 0;
+    min-height: 50px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003160}}
+  .blog__navbar .navbar-nav > li > a {
+    line-height: 20px;
+    padding: 10px 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003168}}
+  .blog__list {
+    padding-top: 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003171}}
+  .blog__list .caption {
+    height: auto;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003176}}
+  .blog__title {
+    font-size: 23px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003180}}
+  .blog__formCollapse {
+    border: none;
+    box-shadow: none;
+    margin-top: 0 !important;
+    padding: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003187}}
+  .blog__searchIcon, .blog__searchIcon-mobile, .blog__closeIcon {
+    font-size: 30px;
+    margin: 13px 15px 13px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003192}}
+  .blog__navbarToggle {
+    color: #FFF;
+    font-size: 20px;
+    margin: 5px 5px 5px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003197}}
+  .blog__navbarToggle:hover {
+    color: #333;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003201}}
+  .blog__navbarToggle .glyphicon-chevron-down,
+  .blog__navbarToggle .glyphicon-chevron-up {
+    top: 4px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003207}}
+  .blog__closeIcon {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 640px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003215}}
+  .logoPath {
+    -webkit-transform: translateX(-70%);
+        -ms-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003221}}
+  .blog__teaser {
+    bottom: 15px;
+    left: 0;
+    padding: 0 15px;
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003227}}
+  .blog__teaser .label {
+    font-size: 15px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003231}}
+  .blog__teaser h1 {
+    font-size: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003244}}
+  .blog__link--big .blog__teaser h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003257}}
+  .content__heading {
+    font-size: 18px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003262}}
+  .logoPath {
+    -webkit-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
+            transform: translateX(-40%);
+  }
+}
+@media screen and (max-width: 384px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003270}}
+  .header__logo {
+    width: 60%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003275}}
+  .col-xs-6 {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003281}}
+  .works__item {
+    height: 100vw;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003286}}
+  .logoPath {
+    -webkit-transform: translateX(-20%);
+        -ms-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003294}}
+  .blog__teaser .label {
+    font-size: 14px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003298}}
+  .blog__teaser h1 {
+    font-size: 18px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003311}}
+  .blog__link--big .blog__teaser h1 {
+    font-size: 20px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003321}}
+  .blog__list .thumbnail {
+    margin-bottom: 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003325}}
+  .blog__list .caption {
+    padding: 15px 0;
+  }
+}
+@media screen and (max-width: 360px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/xampp\/htdocs\/ozzigeno\/css\/_custom\.scss}line{font-family:\00003333}}
+  .logoPath {
+    -webkit-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+            transform: translateX(-10%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

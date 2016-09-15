@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Futuran';
+    src: url('../fonts/futuran.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway ExtraBold';
+    src: url('../fonts/raleway-extrabold-webfont.eot');
+    src: url('../fonts/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff'),
+         url('../fonts/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway Italic';
+    src: url('../fonts/raleway-italic-webfont.eot');
+    src: url('../fonts/raleway-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-italic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-italic-webfont.woff') format('woff'),
+         url('../fonts/raleway-italic-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-italic-webfont.svg#ralewayitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Fonts Variable
+$Futuran: "Futuran", sans-serif;
+$RalewayExtraBold: "Raleway ExtraBold", sans-serif;
+$RalewayRegular: "Raleway Regular", sans-serif;
+$RalewayBold: "Raleway Bold", sans-serif;
+$RalewayItalic: "Raleway Italic", sans-serif;
+
+// Colors Variable
+$black: #000;
+$black-1: #202020;
+$darkenGreen: #86A233;
+$grey: #444;
+$softGrey: #AAA;
+$softGrey-1: #EEE;
+$softGreen: #93BE15;
+$white: #FFF;
+$yellow: #FAD700;
+
+html, body {
+  width: 100%;
+}
+
+body {
+  background-color: $white;
+  font-family: $RalewayRegular;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.header {
+
+  &__logo {
+    height: auto;
+    padding: 0 0 0 15px;
+  }
+
+  &__navbar {
+    background-color: $white;
+    border-color: transparent;
+    margin-bottom: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid $softGrey-1;
+  }
+
+  &__navbarToggle {
+    border: none;
+    margin: 0 15px 0 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    &:focus, &:hover {
+      background-color: transparent !important;
+    }
+
+    .icon-bar {
+      background-color: $softGreen !important;
+      height: 5px;
+
+      +.icon-bar {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  &__navbarList {
+    font: normal 14px $Futuran;
+    margin: 14px -15px 14px 0;
+
+    >li {
+
+      >a {
+        color: $softGreen !important;
+
+        transition: color .5s;
+
+        &:focus, &:hover, &.active {
+          background-color: transparent;
+          color: $yellow !important;
+
+          transition: color .5s;
+        }
+      }
+    }
+  }
+}

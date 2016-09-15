@@ -1,0 +1,336 @@
+@media screen and (min-width: 1440px) {
+  .col-xlg-3 {
+    width: 25%;
+  }
+
+  .works {
+
+    &__item {
+      height: 25vw;
+    }
+  }
+
+  .logoPath {
+    right: -15%;
+    top: 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog__link {
+
+    &--big {
+      width: calc(66.66666667% - 1px);
+    }
+
+    &--small {
+      width: calc(33.33333333% - 1px);
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: auto;
+  }
+
+  .works {
+
+    &__item {
+      height: 50vw;
+    }
+  }
+	
+	.logoPath {
+		width: 500px;
+	}
+
+  .blog {
+
+    &__teaser {
+
+      .label {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 21px;
+      }
+    }
+
+    &__link {
+
+      &--big {
+
+        .blog {
+
+          &__teaser {
+
+            h1 {
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog__link {
+
+    &--big {
+      width: calc(66.66666667% - 1px);
+    }
+
+    &--small {
+      width: calc(33.33333333% - 1px);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+
+    &__navbar {
+      padding: 15px 0;
+    }
+
+    &__navbarRelative {
+      position: relative;
+    }
+
+    &__navbarCollapse {
+      margin-top: 10px;
+    }
+		
+		&__navbarList {
+			margin: 7.5px -15px;
+		}
+  }
+
+  .content {
+
+    &__heading {
+      font-size: 21px;
+    }
+  }
+
+  .logoPath {
+		right: -100%;
+		
+		transform: translateX(-100%);
+  }
+
+  .blog {
+
+    &__teaser {
+      font-size: 23px;
+    }
+
+    &__link {
+
+      &--big {
+        width: 100%;
+
+        .blog {
+
+          &__teaser {
+
+            h1 {
+              font-size: 32px;
+            }
+          }
+        }
+      }
+
+      &--small {
+        width: 100%;
+      }
+    }
+
+    &__navbar {
+      margin-bottom: 0;
+      min-height: 50px;
+
+      .navbar-nav {
+
+        >li {
+
+          >a {
+            line-height: 20px;
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+
+    &__list {
+      padding-top: 15px;
+			
+			.caption {
+				height: auto;
+			}
+    }
+
+    &__title {
+      font-size: 23px;
+    }
+
+    &__formCollapse {
+      border: none;
+      box-shadow: none;
+      margin-top: 0 !important;
+      padding: 0;
+    }
+
+    &__searchIcon {
+      font-size: 30px;
+      margin: 13px 15px 13px 0;
+    }
+
+    &__navbarToggle {
+      color: $white;
+      font-size: 20px;
+      margin: 5px 5px 5px 0;
+
+      &:hover {
+        color: #333;
+      }
+
+      .glyphicon-chevron-down,
+      .glyphicon-chevron-up {
+        top: 4px;
+      }
+    }
+
+    &__closeIcon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+	.logoPath {
+		transform: translateX(-70%);
+	}
+	
+  .blog {
+
+    &__teaser {
+			bottom: 15px;
+			left: 0;
+			padding: 0 15px;
+			width: 100%;
+
+      .label {
+        font-size: 15px;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+    }
+
+    &__link {
+
+      &--big {
+
+        .blog {
+
+          &__teaser {
+
+            h1 {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+
+    &__heading {
+      font-size: 18px;
+    }
+  }
+	
+	.logoPath {
+		transform: translateX(-40%);
+	}
+}
+
+@media screen and (max-width: 384px) {
+  .header {
+
+    &__logo {
+      width: 60%;
+    }
+  }
+
+  .col-xs-6 {
+    width: 100%;
+  }
+
+  .works {
+
+    &__item {
+      height: 100vw;
+    }
+  }
+	
+	.logoPath {
+		transform: translateX(-20%);
+	}
+
+  .blog {
+
+    &__teaser {
+
+      .label {
+        font-size: 14px;
+      }
+
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    &__link {
+
+      &--big {
+
+        .blog {
+
+          &__teaser {
+
+            h1 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    &__list {
+
+      .thumbnail {
+        margin-bottom: 0;
+      }
+
+      .caption {
+        padding: 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+	.logoPath {
+		transform: translateX(-10%);
+	}
+}
