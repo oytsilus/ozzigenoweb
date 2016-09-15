@@ -31,6 +31,7 @@
 	  <link rel="shortcut icon" href="img/favicon.png">
 
 	  <title>Web Design & Digital Marketing Agency Jakarta | Ozzigeno Studio</title>
+	  
 	  <!-- Stylesheets -->
 		<link rel="stylesheet" href="css/bootstrap.min.css" media="all" type="text/css">
 	  <link rel="stylesheet" href="css/style.css" media="all" type="text/css">
